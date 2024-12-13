@@ -2,7 +2,10 @@ import java.util.*;
 
 public class Main { 
    // store paths in ans array
-
+    /* In a single move you are allowed to
+    jump 1 or more steps horizontally (as h1, h2, .. ),
+    or 1 or more steps vertically (as v1, v2, ..) or 1 
+    or more steps diagonally (as d1, d2, ..).*/
     static ArrayList<String> ans = new ArrayList<>();
     static void printMazePaths(int sr, int sc, int dr, int dc, String psf) {
             
