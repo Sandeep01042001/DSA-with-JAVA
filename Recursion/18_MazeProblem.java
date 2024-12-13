@@ -1,10 +1,10 @@
 import java.io.*;
 import java.util.*;
- /*In a single move you are allowed to jump
+ /*In a single move you are allowed to jump   https://course.acciojob.com/idle?question=21ed24d5-3798-4152-a4e8-85627d51884c
   1 or more steps horizontally (as h1, h2, .. ), or
    1 or more steps vertically (as v1, v2, ..) or 
    1 or more steps diagonally (as d1, d2, ..).*/
-   
+
    /* Input 2 2
       Output
        h1v1
