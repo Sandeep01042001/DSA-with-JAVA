@@ -1,6 +1,6 @@
 import java.util.*;
 /* https://course.acciojob.com/idle?question=1f8e91a5-e54f-488c-8706-aaf17b2ceb3d */
-public class Main {
+public class Main { 
     public static int findIndex(int key, int[] arr) {
         int lo = 0;
         int hi = arr.length-1;
