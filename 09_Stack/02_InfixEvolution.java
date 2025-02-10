@@ -30,18 +30,20 @@ class Solution {
             } else if (op.size() == 0 || ch == '(') {
                 op.push(ch);
             } else if (ch == ')') {
-                int v2 = val.pop();
-                int v1 = val.pop();
-                if (op.peek() == '+')
-                    val.push(v1 + v2);
-                if (op.peek() == '-')
-                    val.push(v1 - v2);
-                if (op.peek() == '*')
-                    val.push(v1 * v2);
-                if (op.peek() == '/')
-                    val.push(v1 / v2);
-                op.pop();
-                op.pop();
+                while(op.peek() != '('){
+                   int v2 = val.pop();
+                   int v1 = val.pop();
+                  if (op.peek() == '+')
+                      val.push(v1 + v2);
+                  if (op.peek() == '-')
+                      val.push(v1 - v2);
+                  if (op.peek() == '*')
+                     val.push(v1 * v2);
+                  if (op.peek() == '/')
+                     val.push(v1 / v2);
+                     op.pop();
+                 }
+                 op.pop();
             } else {
                 if (ch == '+' || ch == '-') {
                     if (op.peek() != '(') {
